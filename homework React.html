@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://fb.me/react-15.0.0.js"></script>
+<script src="https://fb.me/react-dom-15.0.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+</head>
+<body>
+    
+    <style>
+        .person {
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 2px #ccc;
+            width: 200px;
+            padding: 20px;
+        }
+        </style>
+        <div id='root'></div>
+        <script type="text/babel">
+            function Person() {
+                return (
+                    <div className="person">
+                        <h1>Dmitrii</h1>
+                        <p>Age: 28</p>
+                    </div>
+                );
+            }
+            const container = document.getElementById('root');
+    ReactDOM.render(<Person />, container);
+
+        </script>
+        
+        <!-- <div class="person">
+            <h1>Dmitrii</h1>
+            <p>Age: 28</p>
+        </div> -->
+        <!-- <div class="person">
+            <h1>John</h1>
+            <p>Age: 30</p>
+        </div> -->
+        
+</body>
+</html>
